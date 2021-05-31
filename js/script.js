@@ -2,17 +2,14 @@
 // Mail: Chiedi all’utente la sua email,controlla che sia nella lista di chi può accedere,
 // stampa un messaggio appropriato sull’esito del controllo.
 
- var indirizzoUtente = prompt('inserisci la tua mail per accedere');
+var indirizzoUtente = prompt('inserisci la tua mail per accedere');
     
- var indirizziMail = ['flavio@gmail.it', 'flavio@boolean.it', 'flavio@pec.it'];
+var indirizziMail = ['flavio@gmail.it', 'flavio@boolean.it', 'flavio@pec.it'];
 
 for(var i = 0; i < indirizziMail.length; i++){    
-     if(indirizzoUtente == indirizziMail[i]){        
-         console.log('accesso eseguito');
-     } else {
-         console.log('indirizzo mail errato. Riprova');
-         indirizzoUtente = prompt('inserisci la tua mail CORRETTA per accedere');
-     }
+    if(indirizzoUtente == indirizziMail[i]){        
+        console.log('accesso eseguito');
+    } 
 }
 
 
