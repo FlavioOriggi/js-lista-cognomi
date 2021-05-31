@@ -23,11 +23,12 @@ var cognomeUtenteMaiuscolo = cognomeUtente[0].toUpperCase() + cognomeUtente.subs
 
 
 var listaCognomi = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
-listaCognomi.push(cognomeUtenteMaiuscolo)
+listaCognomi.push(cognomeUtenteMaiuscolo);
 
+
+listaCognomi.sort(); 
 
 for (var i = 0; i < listaCognomi.length; i++){        
-    listaCognomi.sort();   
     if(cognomeUtenteMaiuscolo == listaCognomi[i]) {
         console.log(i + 1);
     }              
