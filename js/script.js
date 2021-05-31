@@ -18,24 +18,24 @@
 
  
 
-var cognomeUtente = prompt('inserisci il tuo cognome');
+var cognomeUtente = prompt('inserisci il tuo cognome')
 
 
 var listaCognomi = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
 listaCognomi.push(cognomeUtente)
 
 
- for (var i = 0; i < listaCognomi.length; i++){    
-     
-     listaCognomi.sort();  
-     console.log(listaCognomi);           
- }
+for (var i = 0; i < listaCognomi.length; i++){        
+    listaCognomi.sort();   
+    if(cognomeUtente == listaCognomi[i]) {
+        console.log(i + 1);
+    }              
+}
 
-// console.log(listaCognomi); 
-// var i = 0
-// while (i < listaCognomi.length){
-//     listaCognomi.sort();        
-//     console.log(listaCognomi); 
-//     i++ 
-// }
+console.log(listaCognomi);
+
+
+
+
+
 
