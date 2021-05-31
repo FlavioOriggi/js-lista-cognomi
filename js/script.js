@@ -3,16 +3,16 @@
 // stampa un messaggio appropriato sull’esito del controllo.
 
 var indirizzoUtente = prompt('inserisci la tua mail per accedere');
-console.log(indirizzoUtente);
-
+    
 var indirizziMail = ['flavio@gmail.it', 'flavio@boolean.it', 'flavio@pec.it'];
 
 for(var i = 0; i < indirizziMail.length; i++){
-    if(indirizzoUtente[i] == 'flavio@boolean.it'){
-
+    
+    if(indirizzoUtente == 'flavio@boolean.it'){        
         console.log('accesso eseguito');
     } else {
         console.log('indirizzo mail errato. Riprova');
+        indirizzoUtente = prompt('inserisci la tua mail per accedere');
     }
 }
 
