@@ -18,16 +18,17 @@
 
  
 
-var cognomeUtente = prompt('inserisci il tuo cognome')
+var cognomeUtente = prompt('inserisci il tuo cognome');
+var cognomeUtenteMaiuscolo = cognomeUtente[0].toUpperCase() + cognomeUtente.substring(1);
 
 
 var listaCognomi = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
-listaCognomi.push(cognomeUtente)
+listaCognomi.push(cognomeUtenteMaiuscolo)
 
 
 for (var i = 0; i < listaCognomi.length; i++){        
     listaCognomi.sort();   
-    if(cognomeUtente == listaCognomi[i]) {
+    if(cognomeUtenteMaiuscolo == listaCognomi[i]) {
         console.log(i + 1);
     }              
 }
